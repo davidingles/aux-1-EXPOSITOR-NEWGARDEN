@@ -76,7 +76,7 @@ const Home: NextPage = () => {
               />
           
           </Suspense>
-          <OrbitControls autoRotate autoRotateSpeed={1} panSpeed={.1} rotateSpeed={.1} zoomSpeed={.1}/>
+          <OrbitControls autoRotate autoRotateSpeed={2} panSpeed={.3} rotateSpeed={.6} zoomSpeed={.3}/>
           <ContactShadows resolution={1024} scale={1} position={[0, -.01, 0]} blur={3} opacity={.3} far={1} color="#8a6246" />
         </Canvas>
       </div>
