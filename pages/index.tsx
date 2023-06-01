@@ -72,11 +72,11 @@ const Home: NextPage = () => {
                 // className={styles.dav}
               scale={.15 }
                 position={[-.0,0.15,0.]}
-                rotation={[Math.PI / 1000, 0, 9.4 ]}
+                rotation={[Math.PI / 100, 0, 9.4 ]}
               />
           
           </Suspense>
-          <OrbitControls autoRotate autoRotateSpeed={1} />
+          <OrbitControls autoRotate autoRotateSpeed={1} dampingFactor={.5} keyPanSpeed={.1} panSpeed={.1} rotateSpeed={.1} zoomSpeed={.1}/>
           <ContactShadows resolution={1024} scale={1} position={[0, -.01, 0]} blur={3} opacity={.3} far={1} color="#8a6246" />
         </Canvas>
       </div>
